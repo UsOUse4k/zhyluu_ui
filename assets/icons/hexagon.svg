@@ -1,0 +1,11 @@
+<svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Component 5">
+<path id="Polygon 2" d="M30 4.33013C34.641 1.65064 40.359 1.65063 45 4.33013L62.476 14.4199C67.117 17.0994 69.976 22.0513 69.976 27.4103V47.5897C69.976 52.9487 67.117 57.9006 62.476 60.5801L45 70.6699C40.359 73.3494 34.641 73.3494 30 70.6699L12.524 60.5801C7.88303 57.9006 5.02405 52.9487 5.02405 47.5897V27.4103C5.02405 22.0513 7.88303 17.0994 12.524 14.4199L30 4.33013Z" fill="url(#paint0_linear_853_1309)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_853_1309" x1="20" y1="65" x2="53" y2="10.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#34AB81"/>
+<stop offset="1" stop-color="#1BBC65"/>
+</linearGradient>
+</defs>
+</svg>
