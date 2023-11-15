@@ -14,12 +14,10 @@ class MyScaffoldCurveGradient extends HookWidget {
     super.key,
     required this.body,
     required this.title,
-    this.bottomBar,
   });
 
   final Widget body;
   final String title;
-  final Widget? bottomBar;
 
   @override
   Widget build(BuildContext context) {
@@ -81,11 +79,6 @@ class MyScaffoldCurveGradient extends HookWidget {
                     ),
                   ),
                 ),
-                if (bottomBar != null)
-                  Positioned(
-                    bottom: 0,
-                    child: bottomBar!,
-                  ),
               ],
             ),
           )

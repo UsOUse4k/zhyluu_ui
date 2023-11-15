@@ -7,10 +7,8 @@ import 'package:zhyluu_ui/features/appartment/screens/loggia_balcony/loggia_balc
 import 'package:zhyluu_ui/features/appartment/screens/loggia_balcony/loggia_balcony_outside_screen.dart';
 import 'package:zhyluu_ui/features/common/screens/my_scaffold_curve_gradient.dart';
 import 'package:zhyluu_ui/features/common/widgets/enumerating_text.dart';
-import 'package:zhyluu_ui/features/common/widgets/my_bottom_bar.dart';
 import 'package:zhyluu_ui/features/common/widgets/my_button.dart';
 import 'package:zhyluu_ui/features/common/widgets/text_with_dot.dart';
-import 'package:zhyluu_ui/gen/assets.gen.dart';
 
 class LoggiaBalconyScreen extends StatelessWidget {
   static const routeName = "/loggia-balcony";
@@ -21,10 +19,6 @@ class LoggiaBalconyScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MyScaffoldCurveGradient(
       title: "УТЕПЛЕНИЕ\nБАЛКОНА / ЛОДЖИИ",
-      bottomBar: MyBottonBar(
-        iconPath: Assets.icons.appartment.appartment.path,
-        text: "Квартира",
-      ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 27),
         child: Column(

@@ -14,13 +14,11 @@ class MyScaffoldCurveImage extends HookWidget {
     required this.body,
     required this.imagePath,
     this.title,
-    this.bottomBar,
   });
 
   final Widget body;
   final String? title;
   final String imagePath;
-  final Widget? bottomBar;
 
   @override
   Widget build(BuildContext context) {
@@ -104,11 +102,6 @@ class MyScaffoldCurveImage extends HookWidget {
                     ),
                   ),
                 ),
-                if (bottomBar != null)
-                  Positioned(
-                    bottom: 0,
-                    child: bottomBar!,
-                  ),
               ],
             ),
           )

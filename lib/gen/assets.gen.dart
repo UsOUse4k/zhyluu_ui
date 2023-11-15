@@ -52,8 +52,6 @@ class $AssetsIconsGen {
   SvgGenImage get hexagon => const SvgGenImage('assets/icons/hexagon.svg');
 
   $AssetsIconsHouseGen get house => const $AssetsIconsHouseGen();
-  $AssetsIconsHowToInsulateGen get howToInsulate =>
-      const $AssetsIconsHowToInsulateGen();
 
   /// File path: assets/icons/issyk-kol.svg
   SvgGenImage get issykKol => const SvgGenImage('assets/icons/issyk-kol.svg');
@@ -156,6 +154,9 @@ class $AssetsImagesGen {
   $AssetsImagesHowToInsulateGen get howToInsulate =>
       const $AssetsImagesHowToInsulateGen();
 
+  /// File path: assets/images/logo.png
+  AssetGenImage get logo => const AssetGenImage('assets/images/logo.png');
+
   /// File path: assets/images/m_appartment.png
   AssetGenImage get mAppartment =>
       const AssetGenImage('assets/images/m_appartment.png');
@@ -197,6 +198,7 @@ class $AssetsImagesGen {
   List<AssetGenImage> get values => [
         background,
         curveGradient,
+        logo,
         mAppartment,
         mHouse,
         penopolisterol,
@@ -250,64 +252,6 @@ class $AssetsIconsHouseGen {
 
   /// List of all assets
   List<SvgGenImage> get values => [floor, fundament, house, roof, wall];
-}
-
-class $AssetsIconsHowToInsulateGen {
-  const $AssetsIconsHowToInsulateGen();
-
-  /// File path: assets/icons/how_to_insulate/air.svg
-  SvgGenImage get air =>
-      const SvgGenImage('assets/icons/how_to_insulate/air.svg');
-
-  /// File path: assets/icons/how_to_insulate/dermatology.svg
-  SvgGenImage get dermatology =>
-      const SvgGenImage('assets/icons/how_to_insulate/dermatology.svg');
-
-  /// File path: assets/icons/how_to_insulate/easy_damageble.svg
-  SvgGenImage get easyDamageble =>
-      const SvgGenImage('assets/icons/how_to_insulate/easy_damageble.svg');
-
-  /// File path: assets/icons/how_to_insulate/eco_friendly.svg
-  SvgGenImage get ecoFriendly =>
-      const SvgGenImage('assets/icons/how_to_insulate/eco_friendly.svg');
-
-  /// File path: assets/icons/how_to_insulate/fire_extinction.svg
-  SvgGenImage get fireExtinction =>
-      const SvgGenImage('assets/icons/how_to_insulate/fire_extinction.svg');
-
-  /// File path: assets/icons/how_to_insulate/protection.svg
-  SvgGenImage get protection =>
-      const SvgGenImage('assets/icons/how_to_insulate/protection.svg');
-
-  /// File path: assets/icons/how_to_insulate/sound_proof.svg
-  SvgGenImage get soundProof =>
-      const SvgGenImage('assets/icons/how_to_insulate/sound_proof.svg');
-
-  /// File path: assets/icons/how_to_insulate/thermal_insulation.svg
-  SvgGenImage get thermalInsulation =>
-      const SvgGenImage('assets/icons/how_to_insulate/thermal_insulation.svg');
-
-  /// File path: assets/icons/how_to_insulate/water_protection.svg
-  SvgGenImage get waterProtection =>
-      const SvgGenImage('assets/icons/how_to_insulate/water_protection.svg');
-
-  /// File path: assets/icons/how_to_insulate/weight.svg
-  SvgGenImage get weight =>
-      const SvgGenImage('assets/icons/how_to_insulate/weight.svg');
-
-  /// List of all assets
-  List<SvgGenImage> get values => [
-        air,
-        dermatology,
-        easyDamageble,
-        ecoFriendly,
-        fireExtinction,
-        protection,
-        soundProof,
-        thermalInsulation,
-        waterProtection,
-        weight
-      ];
 }
 
 class $AssetsIconsMainGen {
@@ -1066,6 +1010,46 @@ class $AssetsIconsMainDrawerGen {
 class $AssetsImagesHowToInsulateProsAndConsGen {
   const $AssetsImagesHowToInsulateProsAndConsGen();
 
+  /// File path: assets/images/how_to_insulate/pros_and_cons/Central Heating.png
+  AssetGenImage get centralHeating => const AssetGenImage(
+      'assets/images/how_to_insulate/pros_and_cons/Central Heating.png');
+
+  /// File path: assets/images/how_to_insulate/pros_and_cons/Dermatology.png
+  AssetGenImage get dermatology => const AssetGenImage(
+      'assets/images/how_to_insulate/pros_and_cons/Dermatology.png');
+
+  /// File path: assets/images/how_to_insulate/pros_and_cons/Escape Mask.png
+  AssetGenImage get escapeMask => const AssetGenImage(
+      'assets/images/how_to_insulate/pros_and_cons/Escape Mask.png');
+
+  /// File path: assets/images/how_to_insulate/pros_and_cons/Fire Extinguisher.png
+  AssetGenImage get fireExtinguisher => const AssetGenImage(
+      'assets/images/how_to_insulate/pros_and_cons/Fire Extinguisher.png');
+
+  /// File path: assets/images/how_to_insulate/pros_and_cons/Keep Dry.png
+  AssetGenImage get keepDry => const AssetGenImage(
+      'assets/images/how_to_insulate/pros_and_cons/Keep Dry.png');
+
+  /// File path: assets/images/how_to_insulate/pros_and_cons/Leaf.png
+  AssetGenImage get leaf => const AssetGenImage(
+      'assets/images/how_to_insulate/pros_and_cons/Leaf.png');
+
+  /// File path: assets/images/how_to_insulate/pros_and_cons/No Audio.png
+  AssetGenImage get noAudio => const AssetGenImage(
+      'assets/images/how_to_insulate/pros_and_cons/No Audio.png');
+
+  /// File path: assets/images/how_to_insulate/pros_and_cons/Protect.png
+  AssetGenImage get protect => const AssetGenImage(
+      'assets/images/how_to_insulate/pros_and_cons/Protect.png');
+
+  /// File path: assets/images/how_to_insulate/pros_and_cons/Warm.png
+  AssetGenImage get warm => const AssetGenImage(
+      'assets/images/how_to_insulate/pros_and_cons/Warm.png');
+
+  /// File path: assets/images/how_to_insulate/pros_and_cons/Weight.png
+  AssetGenImage get weight => const AssetGenImage(
+      'assets/images/how_to_insulate/pros_and_cons/Weight.png');
+
   /// File path: assets/images/how_to_insulate/pros_and_cons/cellulose.png
   AssetGenImage get cellulose => const AssetGenImage(
       'assets/images/how_to_insulate/pros_and_cons/cellulose.png');
@@ -1104,6 +1088,16 @@ class $AssetsImagesHowToInsulateProsAndConsGen {
 
   /// List of all assets
   List<AssetGenImage> get values => [
+        centralHeating,
+        dermatology,
+        escapeMask,
+        fireExtinguisher,
+        keepDry,
+        leaf,
+        noAudio,
+        protect,
+        warm,
+        weight,
         cellulose,
         clay,
         mineral,

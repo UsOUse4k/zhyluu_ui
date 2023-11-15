@@ -8,7 +8,6 @@ import 'package:zhyluu_ui/features/appartment/screens/window/window_screen.dart'
 import 'package:zhyluu_ui/features/common/screens/my_scaffold_color.dart';
 import 'package:zhyluu_ui/features/common/widgets/my_app_bar.dart';
 import 'package:zhyluu_ui/features/common/widgets/my_back_button.dart';
-import 'package:zhyluu_ui/features/common/widgets/my_bottom_bar.dart';
 import 'package:zhyluu_ui/features/common/widgets/my_house_appartment_card.dart';
 import 'package:zhyluu_ui/features/common/widgets/my_menu_button.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
@@ -34,10 +33,6 @@ class AppartmentScreen extends StatelessWidget {
         ),
       ),
       backgroundColor: AppColors.primary,
-      bottomBar: MyBottonBar(
-        iconPath: Assets.icons.appartment.appartment.path,
-        text: "Квартира",
-      ),
       body: SizedBox(
         height: MediaQuery.of(context).size.height,
         child: SingleChildScrollView(

@@ -43,7 +43,6 @@ class MyMainCard extends StatelessWidget {
                     width: 210,
                     height: 52,
                     alignment: Alignment.topCenter,
-                    padding: const EdgeInsets.only(top: 5),
                     decoration: BoxDecoration(
                       borderRadius: const BorderRadius.only(
                         bottomLeft: Radius.circular(22),

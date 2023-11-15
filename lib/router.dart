@@ -41,7 +41,15 @@ import 'package:zhyluu_ui/features/house/screens/wall/wall_screen.dart';
 import 'package:zhyluu_ui/features/main/screens/main_screen.dart';
 import 'package:zhyluu_ui/features/house/screens/house_screen.dart';
 import 'package:zhyluu_ui/features/starting/screens/starting_screen.dart';
-import 'package:zhyluu_ui/features/thickness_dimensions/thickness_dimensions_screen.dart';
+import 'package:zhyluu_ui/features/thickness_dimensions/presentation/screens/materials/clay_screen.dart';
+import 'package:zhyluu_ui/features/thickness_dimensions/presentation/screens/materials/mineral_screen.dart';
+import 'package:zhyluu_ui/features/thickness_dimensions/presentation/screens/materials/penopolisterol_screen.dart';
+import 'package:zhyluu_ui/features/thickness_dimensions/presentation/screens/materials/penopolisterol_xps_screen.dart';
+import 'package:zhyluu_ui/features/thickness_dimensions/presentation/screens/materials/penopoliuretan_pu_screen.dart';
+import 'package:zhyluu_ui/features/thickness_dimensions/presentation/screens/materials/slabs_screen.dart';
+import 'package:zhyluu_ui/features/thickness_dimensions/presentation/screens/materials/straw_screen.dart';
+import 'package:zhyluu_ui/features/thickness_dimensions/presentation/screens/materials/wool_screen.dart';
+import 'package:zhyluu_ui/features/thickness_dimensions/presentation/screens/thickness_dimensions_screen.dart';
 import 'package:zhyluu_ui/features/where_to_insulate/screens/where_to_insulate_ceiling_screen.dart';
 import 'package:zhyluu_ui/features/where_to_insulate/screens/where_to_insulate_floor_screen.dart';
 import 'package:zhyluu_ui/features/where_to_insulate/screens/where_to_insulate_fundament_screen.dart';
@@ -71,6 +79,110 @@ final routerConfig = GoRouter(
     GoRoute(
       path: ThicknessDimensionsScreen.routeName,
       builder: (context, state) => const ThicknessDimensionsScreen(),
+    ),
+    GoRoute(
+      path: "/${MineralScreen.name}/:city/:file",
+      name: MineralScreen.name,
+      builder: (context, state) {
+        final cityOrVillage = state.pathParameters["city"]!;
+        final fileName = state.pathParameters["file"]!;
+
+        return MineralScreen(
+          cityOrVillage: cityOrVillage,
+          fileName: fileName,
+        );
+      },
+    ),
+    GoRoute(
+      path: "/${ClayScreen.name}/:city/:file",
+      name: ClayScreen.name,
+      builder: (context, state) {
+        final cityOrVillage = state.pathParameters["city"]!;
+        final fileName = state.pathParameters["file"]!;
+
+        return ClayScreen(
+          cityOrVillage: cityOrVillage,
+          fileName: fileName,
+        );
+      },
+    ),
+    GoRoute(
+      path: "/${PenopolisterolScreen.name}/:city/:file",
+      name: PenopolisterolScreen.name,
+      builder: (context, state) {
+        final cityOrVillage = state.pathParameters["city"]!;
+        final fileName = state.pathParameters["file"]!;
+
+        return PenopolisterolScreen(
+          cityOrVillage: cityOrVillage,
+          fileName: fileName,
+        );
+      },
+    ),
+    GoRoute(
+      path: "/${PenopolisterolXpsScreen.name}/:city/:file",
+      name: PenopolisterolXpsScreen.name,
+      builder: (context, state) {
+        final cityOrVillage = state.pathParameters["city"]!;
+        final fileName = state.pathParameters["file"]!;
+
+        return PenopolisterolXpsScreen(
+          cityOrVillage: cityOrVillage,
+          fileName: fileName,
+        );
+      },
+    ),
+    GoRoute(
+      path: "/${PenopoliuretanPuScreen.name}/:city/:file",
+      name: PenopoliuretanPuScreen.name,
+      builder: (context, state) {
+        final cityOrVillage = state.pathParameters["city"]!;
+        final fileName = state.pathParameters["file"]!;
+
+        return PenopoliuretanPuScreen(
+          cityOrVillage: cityOrVillage,
+          fileName: fileName,
+        );
+      },
+    ),
+    GoRoute(
+      path: "/${SlabsScreen.name}/:city/:file",
+      name: SlabsScreen.name,
+      builder: (context, state) {
+        final cityOrVillage = state.pathParameters["city"]!;
+        final fileName = state.pathParameters["file"]!;
+
+        return SlabsScreen(
+          cityOrVillage: cityOrVillage,
+          fileName: fileName,
+        );
+      },
+    ),
+    GoRoute(
+      path: "/${StrawScreen.name}/:city/:file",
+      name: StrawScreen.name,
+      builder: (context, state) {
+        final cityOrVillage = state.pathParameters["city"]!;
+        final fileName = state.pathParameters["file"]!;
+
+        return StrawScreen(
+          cityOrVillage: cityOrVillage,
+          fileName: fileName,
+        );
+      },
+    ),
+    GoRoute(
+      path: "/${WoolScreen.name}/:city/:file",
+      name: WoolScreen.name,
+      builder: (context, state) {
+        final cityOrVillage = state.pathParameters["city"]!;
+        final fileName = state.pathParameters["file"]!;
+
+        return WoolScreen(
+          cityOrVillage: cityOrVillage,
+          fileName: fileName,
+        );
+      },
     ),
     GoRoute(
       path: HouseScreen.routeName,

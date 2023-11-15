@@ -9,13 +9,11 @@ class MyScaffoldColor extends HookWidget {
     this.backgroundColor,
     required this.body,
     this.appBar,
-    this.bottomBar,
   });
 
   final Color? backgroundColor;
   final Widget body;
   final Widget? appBar;
-  final Widget? bottomBar;
 
   @override
   Widget build(BuildContext context) {
@@ -37,11 +35,6 @@ class MyScaffoldColor extends HookWidget {
                   Positioned(
                     top: 0,
                     child: appBar!,
-                  ),
-                if (bottomBar != null)
-                  Positioned(
-                    bottom: 0,
-                    child: bottomBar!,
                   ),
               ],
             ),

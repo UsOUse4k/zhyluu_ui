@@ -4,10 +4,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:zhyluu_ui/constants/colors.dart';
 import 'package:zhyluu_ui/features/common/extensions/build_context_extension.dart';
 import 'package:zhyluu_ui/features/common/screens/my_scaffold_color.dart';
-import 'package:zhyluu_ui/features/common/widgets/bell_button.dart';
 import 'package:zhyluu_ui/features/common/widgets/my_app_bar.dart';
 import 'package:zhyluu_ui/features/common/widgets/my_back_button.dart';
-import 'package:zhyluu_ui/features/common/widgets/my_bottom_bar.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
 
 class AboutScreen extends StatelessWidget {
@@ -20,7 +18,6 @@ class AboutScreen extends StatelessWidget {
     return MyScaffoldColor(
       backgroundColor: AppColors.secondary,
       appBar: MyAppBar(
-        bellButtonType: BellButtonType.light,
         isBellVisible: false,
         leading: Padding(
           padding: const EdgeInsets.only(top: 15),
@@ -31,7 +28,6 @@ class AboutScreen extends StatelessWidget {
           ),
         ),
       ),
-      bottomBar: const MyBottonBar(),
       body: SizedBox(
         width: context.screenSize.width,
         height: context.screenSize.height,

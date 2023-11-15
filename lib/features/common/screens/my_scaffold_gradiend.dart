@@ -10,14 +10,12 @@ class MyScaffoldGradient extends HookWidget {
     this.backgroundHeight,
     required this.body,
     this.appBar,
-    this.bottomBar,
   });
 
   final Gradient? backgroundGradiend;
   final double? backgroundHeight;
   final Widget body;
   final Widget? appBar;
-  final Widget? bottomBar;
 
   @override
   Widget build(BuildContext context) {
@@ -39,11 +37,6 @@ class MyScaffoldGradient extends HookWidget {
                   Positioned(
                     top: 0,
                     child: appBar!,
-                  ),
-                if (bottomBar != null)
-                  Positioned(
-                    bottom: 0,
-                    child: bottomBar!,
                   ),
               ],
             ),

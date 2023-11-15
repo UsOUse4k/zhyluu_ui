@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:zhyluu_ui/constants/text_styles.dart';
 import 'package:zhyluu_ui/features/common/screens/my_scaffold_curve_image.dart';
-import 'package:zhyluu_ui/features/common/widgets/my_bottom_bar.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
 
 class WallMaterialScreen extends StatelessWidget {
@@ -14,10 +13,6 @@ class WallMaterialScreen extends StatelessWidget {
     return MyScaffoldCurveImage(
       title: "ВЫБОР\nМАТЕРИАЛА",
       imagePath: Assets.images.wall.image10.path,
-      bottomBar: MyBottonBar(
-        iconPath: Assets.icons.house.house.path,
-        text: "ДОМ",
-      ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 27),
         child: Column(

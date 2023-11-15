@@ -3,7 +3,6 @@ import 'package:go_router/go_router.dart';
 import 'package:zhyluu_ui/constants/text_styles.dart';
 import 'package:zhyluu_ui/features/common/screens/my_scaffold_curve_image.dart';
 import 'package:zhyluu_ui/features/common/widgets/enumerating_text.dart';
-import 'package:zhyluu_ui/features/common/widgets/my_bottom_bar.dart';
 import 'package:zhyluu_ui/features/common/widgets/my_button.dart';
 import 'package:zhyluu_ui/features/house/screens/wall/wall_process/thick_layer_plaster_screen.dart';
 import 'package:zhyluu_ui/features/house/screens/wall/wall_process/thin_layer_plaster_screen.dart';
@@ -19,10 +18,6 @@ class WallProcessScreen extends StatelessWidget {
     return MyScaffoldCurveImage(
       title: "ПРОЦЕСС",
       imagePath: Assets.images.wall.image30.path,
-      bottomBar: MyBottonBar(
-        iconPath: Assets.icons.house.house.path,
-        text: "ДОМ",
-      ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 27),
         child: Column(

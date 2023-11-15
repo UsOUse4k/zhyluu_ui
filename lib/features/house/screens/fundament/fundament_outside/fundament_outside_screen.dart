@@ -4,7 +4,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:zhyluu_ui/constants/colors.dart';
 import 'package:zhyluu_ui/constants/text_styles.dart';
 import 'package:zhyluu_ui/features/common/screens/my_scaffold_curve_image.dart';
-import 'package:zhyluu_ui/features/common/widgets/my_bottom_bar.dart';
 import 'package:zhyluu_ui/features/common/widgets/my_button.dart';
 import 'package:zhyluu_ui/features/house/screens/fundament/fundament_outside/fundament_billing_screen.dart';
 import 'package:zhyluu_ui/features/house/screens/fundament/fundament_outside/fundament_plastic_screen.dart';
@@ -21,10 +20,6 @@ class FundamentOutsideScreen extends StatelessWidget {
     return MyScaffoldCurveImage(
       title: "УТЕПЛЕНИЕ\nСНАРУЖИ",
       imagePath: Assets.images.fundament.image20.path,
-      bottomBar: MyBottonBar(
-        iconPath: Assets.icons.house.house.path,
-        text: "ДОМ",
-      ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 27),
         child: Column(

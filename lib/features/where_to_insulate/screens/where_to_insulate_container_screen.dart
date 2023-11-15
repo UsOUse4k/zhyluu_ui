@@ -3,10 +3,8 @@ import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:zhyluu_ui/constants/colors.dart';
 import 'package:zhyluu_ui/features/common/screens/my_scaffold_gradiend.dart';
-import 'package:zhyluu_ui/features/common/widgets/bell_button.dart';
 import 'package:zhyluu_ui/features/common/widgets/my_app_bar.dart';
 import 'package:zhyluu_ui/features/common/widgets/my_back_button.dart';
-import 'package:zhyluu_ui/features/common/widgets/my_bottom_bar.dart';
 import 'package:zhyluu_ui/features/where_to_insulate/screens/where_to_insulate_ceiling_screen.dart';
 import 'package:zhyluu_ui/features/where_to_insulate/screens/where_to_insulate_floor_screen.dart';
 import 'package:zhyluu_ui/features/where_to_insulate/screens/where_to_insulate_fundament_screen.dart';
@@ -33,9 +31,7 @@ class WhereToInsulateContainerScreen extends StatelessWidget {
             },
           ),
         ),
-        bellButtonType: BellButtonType.light,
       ),
-      bottomBar: const MyBottonBar(),
       backgroundGradiend: AppColors.backgroundLightGradient,
       body: Column(
         children: [

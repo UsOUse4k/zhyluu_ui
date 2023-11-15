@@ -1,15 +1,16 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:zhyluu_ui/constants/colors.dart';
+import 'package:zhyluu_ui/is_kg_cubit.dart';
 
-class LocalizationSwitch extends HookWidget {
+class LocalizationSwitch extends StatelessWidget {
   const LocalizationSwitch({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final isKg = useState(false);
+    final isKg = context.watch<IsKgCubit>().state;
 
     return Row(
       crossAxisAlignment: CrossAxisAlignment.end,
@@ -27,9 +28,9 @@ class LocalizationSwitch extends HookWidget {
           activeColor: AppColors.secondaryLight,
           trackColor: AppColors.secondaryLight,
           thumbColor: AppColors.secondaryDark,
-          value: !isKg.value,
+          value: !isKg,
           onChanged: (value) {
-            // isKg.value = value;
+            context.read<IsKgCubit>().change(!value);
           },
         ),
         const SizedBox(width: 9),

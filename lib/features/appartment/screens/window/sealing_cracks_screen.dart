@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:zhyluu_ui/constants/text_styles.dart';
 import 'package:zhyluu_ui/features/common/screens/my_scaffold_curve_image.dart';
-import 'package:zhyluu_ui/features/common/widgets/my_bottom_bar.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
 
 class SealingCracksScreen extends StatelessWidget {
@@ -14,10 +13,6 @@ class SealingCracksScreen extends StatelessWidget {
     return MyScaffoldCurveImage(
       title: "5 Заклеивание дополнительных щелей и трещин:",
       imagePath: Assets.images.appartment.sealingCracks.path,
-      bottomBar: MyBottonBar(
-        iconPath: Assets.icons.appartment.appartment.path,
-        text: "Квартира",
-      ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 27),
         child: Column(

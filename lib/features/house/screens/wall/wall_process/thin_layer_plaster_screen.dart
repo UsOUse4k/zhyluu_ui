@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:zhyluu_ui/constants/text_styles.dart';
 import 'package:zhyluu_ui/features/common/screens/my_scaffold_image_background.dart';
 import 'package:zhyluu_ui/features/common/widgets/enumerating_text.dart';
-import 'package:zhyluu_ui/features/common/widgets/my_bottom_bar.dart';
 import 'package:zhyluu_ui/features/common/widgets/text_with_dot.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
 
@@ -16,10 +15,6 @@ class ThinLayerPlasterScreen extends StatelessWidget {
     return MyScaffoldImageBackground(
       title:
           "Фасадные системы наружного утепления зданий с отделочным слоем из тонкослойной штукатурки",
-      bottomBar: MyBottonBar(
-        iconPath: Assets.icons.house.house.path,
-        text: "ДОМ",
-      ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 27),
         child: Column(

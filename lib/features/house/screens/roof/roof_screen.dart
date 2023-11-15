@@ -5,12 +5,10 @@ import 'package:zhyluu_ui/constants/colors.dart';
 import 'package:zhyluu_ui/constants/text_styles.dart';
 import 'package:zhyluu_ui/features/common/screens/my_scaffold_curve_gradient.dart';
 import 'package:zhyluu_ui/features/common/widgets/enumerating_text.dart';
-import 'package:zhyluu_ui/features/common/widgets/my_bottom_bar.dart';
 import 'package:zhyluu_ui/features/common/widgets/my_button.dart';
 import 'package:zhyluu_ui/features/house/screens/roof/roof_attic_screen.dart';
 import 'package:zhyluu_ui/features/house/screens/roof/roof_inside_screen.dart';
 import 'package:zhyluu_ui/features/house/screens/roof/roof_outside_screen.dart';
-import 'package:zhyluu_ui/gen/assets.gen.dart';
 
 class RoofScreen extends StatelessWidget {
   static const routeName = "/roof";
@@ -21,10 +19,6 @@ class RoofScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MyScaffoldCurveGradient(
       title: "УТЕПЛЕНИЕ КРЫШИ",
-      bottomBar: MyBottonBar(
-        iconPath: Assets.icons.house.house.path,
-        text: "ДОМ",
-      ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 27),
         child: Column(

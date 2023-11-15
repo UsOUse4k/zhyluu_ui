@@ -28,19 +28,12 @@ class StartingScreen extends StatelessWidget {
                   width: 48,
                   height: 48,
                   alignment: Alignment.center,
+                  clipBehavior: Clip.antiAliasWithSaveLayer,
                   decoration: const BoxDecoration(
                     color: Colors.white,
                     shape: BoxShape.circle,
                   ),
-                  child: Text(
-                    "logo".toUpperCase(),
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.poppins(
-                      fontSize: 13,
-                      letterSpacing: 0.16,
-                      fontWeight: FontWeight.w600,
-                    ),
-                  ),
+                  child: Image.asset(Assets.images.logo.path),
                 ),
                 const SizedBox(height: 43),
                 Text(

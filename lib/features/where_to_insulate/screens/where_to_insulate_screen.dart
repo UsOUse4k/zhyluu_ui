@@ -4,7 +4,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:zhyluu_ui/constants/colors.dart';
 import 'package:zhyluu_ui/features/common/widgets/my_app_bar.dart';
 import 'package:zhyluu_ui/features/common/widgets/my_back_button.dart';
-import 'package:zhyluu_ui/features/common/widgets/my_bottom_bar.dart';
 import 'package:zhyluu_ui/features/common/widgets/my_menu_button.dart';
 import 'package:zhyluu_ui/features/common/screens/my_scaffold_color.dart';
 
@@ -36,7 +35,6 @@ class WhereToInsulateScreen extends StatelessWidget {
         ),
         myMenuButtonType: MyMenuButtonType.inverted,
       ),
-      bottomBar: const MyBottonBar(),
       body: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(horizontal: 28),
         child: Column(

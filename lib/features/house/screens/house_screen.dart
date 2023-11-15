@@ -5,7 +5,6 @@ import 'package:zhyluu_ui/constants/colors.dart';
 import 'package:zhyluu_ui/features/common/screens/my_scaffold_color.dart';
 import 'package:zhyluu_ui/features/common/widgets/my_app_bar.dart';
 import 'package:zhyluu_ui/features/common/widgets/my_back_button.dart';
-import 'package:zhyluu_ui/features/common/widgets/my_bottom_bar.dart';
 import 'package:zhyluu_ui/features/common/widgets/my_house_appartment_card.dart';
 import 'package:zhyluu_ui/features/common/widgets/my_menu_button.dart';
 import 'package:zhyluu_ui/features/house/screens/floor/floor_screen.dart';
@@ -35,10 +34,6 @@ class HouseScreen extends StatelessWidget {
         ),
       ),
       backgroundColor: AppColors.primary,
-      bottomBar: MyBottonBar(
-        iconPath: Assets.icons.house.house.path,
-        text: "ДОМ",
-      ),
       body: SizedBox(
         height: MediaQuery.of(context).size.height,
         child: SingleChildScrollView(

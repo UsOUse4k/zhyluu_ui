@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:zhyluu_ui/constants/colors.dart';
-import 'package:zhyluu_ui/features/common/widgets/bell_button.dart';
 import 'package:zhyluu_ui/features/common/widgets/my_app_bar.dart';
-import 'package:zhyluu_ui/features/common/widgets/my_bottom_bar.dart';
 import 'package:zhyluu_ui/features/common/screens/my_scaffold_color.dart';
+import 'package:zhyluu_ui/features/common/widgets/my_button.dart';
 import 'package:zhyluu_ui/features/main/widgets/category_carousel.dart';
 import 'package:zhyluu_ui/features/main/widgets/localization_switch.dart';
-import 'package:zhyluu_ui/features/main/widgets/my_main_card.dart';
+import 'package:zhyluu_ui/features/thickness_dimensions/presentation/screens/thickness_dimensions_screen.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
 
 class MainScreen extends StatelessWidget {
@@ -20,26 +20,21 @@ class MainScreen extends StatelessWidget {
     return MyScaffoldColor(
       backgroundColor: AppColors.secondary,
       appBar: const MyAppBar(
-        bellButtonType: BellButtonType.light,
         leading: Padding(
           padding: EdgeInsets.only(top: 15),
           child: LocalizationSwitch(),
         ),
       ),
-      bottomBar: MyBottonBar(
-        iconPath: Assets.icons.main.main.path,
-        text: "Главная",
-      ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            const SizedBox(height: 139),
-            Image.asset(
-              Assets.images.main.village.path,
-              width: 183,
-              height: 118,
-            ),
-            Container(
+      body: Column(
+        children: [
+          const SizedBox(height: 139),
+          Image.asset(
+            Assets.images.main.village.path,
+            width: 183,
+            height: 118,
+          ),
+          Expanded(
+            child: Container(
               decoration: const BoxDecoration(
                 color: AppColors.primary,
                 borderRadius: BorderRadius.only(
@@ -65,36 +60,24 @@ class MainScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 21),
                   const CategoryCarousel(),
-                  const SizedBox(height: 21),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 28),
-                    child: Text(
-                      "Гидроизоляция",
-                      textAlign: TextAlign.center,
-                      style: GoogleFonts.poppins(
-                        fontSize: 18,
-                        letterSpacing: 0.63,
-                        fontWeight: FontWeight.w600,
-                      ),
-                    ),
-                  ),
-                  const SizedBox(height: 21),
+                  const Spacer(),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      MyMainCard(
-                        imagePath: Assets.images.waterproofing.path,
-                        text: "Причин и способы решения",
+                      MyButton(
+                        text: "Рассчитать толщину",
+                        onTap: () {
+                          context.push(ThicknessDimensionsScreen.routeName);
+                        },
                       ),
                     ],
                   ),
-                  const SizedBox(height: 97),
+                  const SizedBox(height: 42),
                 ],
               ),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

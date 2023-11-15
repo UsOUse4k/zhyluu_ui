@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -6,9 +7,9 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:zhyluu_ui/constants/colors.dart';
 import 'package:zhyluu_ui/features/about/screens/about_screen.dart';
 import 'package:zhyluu_ui/features/main/screens/main_screen.dart';
-import 'package:zhyluu_ui/features/thickness_dimensions/thickness_dimensions_screen.dart';
 import 'package:zhyluu_ui/features/where_to_insulate/screens/where_to_insulate_container_screen.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
+import 'package:zhyluu_ui/is_kg_cubit.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
@@ -67,14 +68,6 @@ class MyDrawer extends StatelessWidget {
           const SizedBox(height: 28),
           _MyDrawerButton(
             onTap: () {
-              context.push(ThicknessDimensionsScreen.routeName);
-            },
-            iconPath: Assets.icons.main.drawer.thicknessDimensions.path,
-            text: "Размеры толщины теплоизоляции",
-          ),
-          const SizedBox(height: 28),
-          _MyDrawerButton(
-            onTap: () {
               context.push(WhereToInsulateContainerScreen.routeName);
             },
             iconPath: Assets.icons.main.drawer.question.path,
@@ -86,7 +79,16 @@ class MyDrawer extends StatelessWidget {
             child: Material(
               color: Colors.transparent,
               child: InkWell(
-                onTap: _launchURL,
+                onTap: () async {
+                  final isKg = context.read<IsKgCubit>().state;
+                  final link = !isKg
+                      ? "https://docs.google.com/forms/d/e/1FAIpQLSeEeYjz8hbC_PJNzDXHA3Qjt6a4TTuLkG9XAtN2ZP7HtR2WPw/viewform?usp=sf_link"
+                      : "https://docs.google.com/forms/d/e/1FAIpQLSeDDRdNuZp9rR_3ilc1WDl9f_OKgbcRXqEB4ynDv2YyaruVPQ/viewform?usp=sf_link";
+
+                  final Uri url = Uri.parse(link);
+
+                  await launchUrl(url);
+                },
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
@@ -121,12 +123,6 @@ class MyDrawer extends StatelessWidget {
         ],
       ),
     );
-  }
-
-  _launchURL() async {
-    final Uri url = Uri.parse(
-        'https://docs.google.com/forms/d/e/1FAIpQLSeEeYjz8hbC_PJNzDXHA3Qjt6a4TTuLkG9XAtN2ZP7HtR2WPw/viewform?usp=sf_link');
-    await launchUrl(url);
   }
 }
 

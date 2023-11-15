@@ -4,8 +4,6 @@ import 'package:zhyluu_ui/constants/colors.dart';
 import 'package:zhyluu_ui/constants/text_styles.dart';
 import 'package:zhyluu_ui/features/common/screens/my_scaffold_image_background.dart';
 import 'package:zhyluu_ui/features/common/widgets/enumerating_text.dart';
-import 'package:zhyluu_ui/features/common/widgets/my_bottom_bar.dart';
-import 'package:zhyluu_ui/gen/assets.gen.dart';
 
 class PreparatoryWorkScreen extends StatelessWidget {
   static const routeName = "/preparatory-work-screen";
@@ -16,10 +14,6 @@ class PreparatoryWorkScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MyScaffoldImageBackground(
       title: "Подготовительные\nработы",
-      bottomBar: MyBottonBar(
-        iconPath: Assets.icons.appartment.appartment.path,
-        text: "Квартира",
-      ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 27),
         child: Column(

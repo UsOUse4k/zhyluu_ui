@@ -4,7 +4,6 @@ import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:zhyluu_ui/constants/colors.dart';
 import 'package:zhyluu_ui/features/common/extensions/build_context_extension.dart';
-import 'package:zhyluu_ui/features/common/widgets/bell_button.dart';
 import 'package:zhyluu_ui/features/common/widgets/my_app_bar.dart';
 import 'package:zhyluu_ui/features/common/widgets/my_back_button.dart';
 import 'package:zhyluu_ui/features/common/widgets/my_drawer.dart';
@@ -73,7 +72,6 @@ class MyScaffoldImageBackground extends HookWidget {
                 Positioned(
                   top: 0,
                   child: MyAppBar(
-                    bellButtonType: BellButtonType.light,
                     leading: Padding(
                       padding: const EdgeInsets.only(top: 9),
                       child: MyBackButton(

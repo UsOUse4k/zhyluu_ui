@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:zhyluu_ui/constants/text_styles.dart';
 import 'package:zhyluu_ui/features/common/screens/my_scaffold_image_background.dart';
-import 'package:zhyluu_ui/features/common/widgets/my_bottom_bar.dart';
 import 'package:zhyluu_ui/features/common/widgets/my_container_text.dart';
 import 'package:zhyluu_ui/features/common/widgets/text_with_dot.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
@@ -15,10 +14,6 @@ class InsulationInstalationWorkScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MyScaffoldImageBackground(
       title: "Монтаж утеплителя",
-      bottomBar: MyBottonBar(
-        iconPath: Assets.icons.appartment.appartment.path,
-        text: "Квартира",
-      ),
       body: Column(
         children: [
           const SizedBox(height: 20),

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:zhyluu_ui/constants/text_styles.dart';
 import 'package:zhyluu_ui/features/common/screens/my_scaffold_image_background.dart';
-import 'package:zhyluu_ui/features/common/widgets/my_bottom_bar.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
 
 class FundamentBillingScreen extends StatelessWidget {
@@ -13,10 +12,6 @@ class FundamentBillingScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MyScaffoldImageBackground(
       title: "2. Процесс засыпного метода утепления фундамента",
-      bottomBar: MyBottonBar(
-        iconPath: Assets.icons.house.house.path,
-        text: "ДОМ",
-      ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 27),
         child: Column(

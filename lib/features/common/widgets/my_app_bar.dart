@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:zhyluu_ui/features/common/widgets/bell_button.dart';
 import 'package:zhyluu_ui/features/common/widgets/my_menu_button.dart';
 
 class MyAppBar extends StatelessWidget {
@@ -7,13 +6,11 @@ class MyAppBar extends StatelessWidget {
     super.key,
     this.leading,
     this.myMenuButtonType = MyMenuButtonType.regular,
-    this.bellButtonType = BellButtonType.regular,
     this.isBellVisible = true,
   });
 
   final Widget? leading;
   final MyMenuButtonType myMenuButtonType;
-  final BellButtonType bellButtonType;
   final bool isBellVisible;
 
   @override
@@ -29,22 +26,11 @@ class MyAppBar extends StatelessWidget {
           const Spacer(),
           Padding(
             padding: const EdgeInsets.only(top: 9),
-            child: Row(
-              children: [
-                if (isBellVisible) ...[
-                  BellButton(
-                    type: bellButtonType,
-                    onTap: () {},
-                  ),
-                  const SizedBox(width: 25),
-                ],
-                MyMenuButton(
-                  onTap: () {
-                    Scaffold.of(context).openEndDrawer();
-                  },
-                  type: myMenuButtonType,
-                ),
-              ],
+            child: MyMenuButton(
+              onTap: () {
+                Scaffold.of(context).openEndDrawer();
+              },
+              type: myMenuButtonType,
             ),
           ),
         ],

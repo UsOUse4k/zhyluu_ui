@@ -4,7 +4,6 @@ import 'package:zhyluu_ui/constants/colors.dart';
 import 'package:zhyluu_ui/constants/text_styles.dart';
 import 'package:zhyluu_ui/features/common/screens/my_scaffold_curve_image.dart';
 import 'package:zhyluu_ui/features/common/widgets/enumerating_text.dart';
-import 'package:zhyluu_ui/features/common/widgets/my_bottom_bar.dart';
 import 'package:zhyluu_ui/features/common/widgets/my_container_text.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
 
@@ -18,10 +17,6 @@ class InstalationSlopesScreen extends StatelessWidget {
     return MyScaffoldCurveImage(
       title: "3 Установка оконных откосов.",
       imagePath: Assets.images.appartment.installationSlopes.path,
-      bottomBar: MyBottonBar(
-        iconPath: Assets.icons.appartment.appartment.path,
-        text: "Квартира",
-      ),
       body: Column(
         children: [
           Padding(

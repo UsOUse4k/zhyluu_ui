@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:zhyluu_ui/constants/text_styles.dart';
 import 'package:zhyluu_ui/features/common/screens/my_scaffold_image_background.dart';
-import 'package:zhyluu_ui/features/common/widgets/my_bottom_bar.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
 
 class FundamentPlasticScreen extends StatelessWidget {
@@ -14,10 +13,6 @@ class FundamentPlasticScreen extends StatelessWidget {
     return MyScaffoldImageBackground(
       title:
           "1. Процесс утепления фундамента снаружи\nс утеплителем\nна основе пенопласта",
-      bottomBar: MyBottonBar(
-        iconPath: Assets.icons.house.house.path,
-        text: "ДОМ",
-      ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 27),
         child: Column(

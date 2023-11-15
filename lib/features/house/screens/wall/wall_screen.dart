@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:zhyluu_ui/constants/text_styles.dart';
 import 'package:zhyluu_ui/features/common/screens/my_scaffold_curve_gradient.dart';
-import 'package:zhyluu_ui/features/common/widgets/my_bottom_bar.dart';
 import 'package:zhyluu_ui/features/common/widgets/my_button.dart';
 import 'package:zhyluu_ui/features/house/screens/wall/wall_inside_screen.dart';
 import 'package:zhyluu_ui/features/house/screens/wall/wall_material_screen.dart';
@@ -19,10 +18,6 @@ class WallScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MyScaffoldCurveGradient(
       title: "УТЕПЛЕНИЕ\nСТЕН",
-      bottomBar: MyBottonBar(
-        iconPath: Assets.icons.house.house.path,
-        text: "ДОМ",
-      ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 27),
         child: Column(
