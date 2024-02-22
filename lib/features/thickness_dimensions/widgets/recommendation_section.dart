@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:zhyluu_ui/constants/colors.dart';
-import 'package:zhyluu_ui/features/thickness_dimensions/presentation/screens/materials/clay_screen.dart';
-import 'package:zhyluu_ui/features/thickness_dimensions/presentation/screens/materials/mineral_screen.dart';
-import 'package:zhyluu_ui/features/thickness_dimensions/presentation/screens/materials/penopolisterol_screen.dart';
-import 'package:zhyluu_ui/features/thickness_dimensions/presentation/screens/materials/penopolisterol_xps_screen.dart';
-import 'package:zhyluu_ui/features/thickness_dimensions/presentation/screens/materials/penopoliuretan_pu_screen.dart';
-import 'package:zhyluu_ui/features/thickness_dimensions/presentation/screens/materials/slabs_screen.dart';
-import 'package:zhyluu_ui/features/thickness_dimensions/presentation/screens/materials/straw_screen.dart';
-import 'package:zhyluu_ui/features/thickness_dimensions/presentation/screens/materials/wool_screen.dart';
+import 'package:zhyluu_ui/features/thickness_dimensions/screens/materials/clay_screen.dart';
+import 'package:zhyluu_ui/features/thickness_dimensions/screens/materials/mineral_screen.dart';
+import 'package:zhyluu_ui/features/thickness_dimensions/screens/materials/penopolisterol_screen.dart';
+import 'package:zhyluu_ui/features/thickness_dimensions/screens/materials/penopolisterol_xps_screen.dart';
+import 'package:zhyluu_ui/features/thickness_dimensions/screens/materials/penopoliuretan_pu_screen.dart';
+import 'package:zhyluu_ui/features/thickness_dimensions/screens/materials/slabs_screen.dart';
+import 'package:zhyluu_ui/features/thickness_dimensions/screens/materials/straw_screen.dart';
+import 'package:zhyluu_ui/features/thickness_dimensions/screens/materials/wool_screen.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
 
 class RecommendationSection extends StatelessWidget {

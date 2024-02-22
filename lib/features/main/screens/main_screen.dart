@@ -7,7 +7,7 @@ import 'package:zhyluu_ui/features/common/screens/my_scaffold_color.dart';
 import 'package:zhyluu_ui/features/common/widgets/my_button.dart';
 import 'package:zhyluu_ui/features/main/widgets/category_carousel.dart';
 import 'package:zhyluu_ui/features/main/widgets/localization_switch.dart';
-import 'package:zhyluu_ui/features/thickness_dimensions/presentation/screens/thickness_dimensions_screen.dart';
+import 'package:zhyluu_ui/features/thickness_dimensions/screens/thickness_dimensions_screen.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
 
 class MainScreen extends StatelessWidget {

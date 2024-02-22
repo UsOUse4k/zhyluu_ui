@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:zhyluu_ui/features/thickness_dimensions/presentation/screens/materials/material_base_screen.dart';
+import 'package:zhyluu_ui/features/thickness_dimensions/screens/materials/material_base_screen.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
 
 class PenopolisterolXpsScreen extends StatelessWidget {

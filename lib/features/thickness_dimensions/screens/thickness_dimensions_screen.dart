@@ -6,11 +6,11 @@ import 'package:zhyluu_ui/constants/colors.dart';
 import 'package:zhyluu_ui/features/common/screens/my_scaffold_gradiend.dart';
 import 'package:zhyluu_ui/features/common/widgets/my_app_bar.dart';
 import 'package:zhyluu_ui/features/common/widgets/my_back_button.dart';
-import 'package:zhyluu_ui/features/thickness_dimensions/presentation/widgets/recommendation_section.dart';
-import 'package:zhyluu_ui/features/thickness_dimensions/presentation/widgets/region_section.dart';
-import 'package:zhyluu_ui/features/thickness_dimensions/presentation/widgets/selected_list_section.dart';
-import 'package:zhyluu_ui/features/thickness_dimensions/presentation/widgets/size_section.dart';
-import 'package:zhyluu_ui/features/thickness_dimensions/presentation/widgets/ti_manager.dart';
+import 'package:zhyluu_ui/features/thickness_dimensions/widgets/recommendation_section.dart';
+import 'package:zhyluu_ui/features/thickness_dimensions/widgets/region_section.dart';
+import 'package:zhyluu_ui/features/thickness_dimensions/widgets/selected_list_section.dart';
+import 'package:zhyluu_ui/features/thickness_dimensions/widgets/size_section.dart';
+import 'package:zhyluu_ui/features/thickness_dimensions/widgets/ti_manager.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
 
 class ThicknessDimensionsScreen extends HookWidget {
@@ -68,7 +68,7 @@ class ThicknessDimensionsScreen extends HookWidget {
                   progress: 0,
                   length: 5,
                   onTap: (data) {
-                    print(data);
+                    // print(data);
 
                     nextPage(
                       CityVillageSection(
@@ -76,7 +76,7 @@ class ThicknessDimensionsScreen extends HookWidget {
                         progress: 1,
                         length: 5,
                         onTap: (data) {
-                          print(data);
+                          // print(data);
 
                           cityOrVillage = data;
 
@@ -86,7 +86,7 @@ class ThicknessDimensionsScreen extends HookWidget {
                               progress: 2,
                               length: 5,
                               onTap: (data) {
-                                print(data);
+                                // print(data);
 
                                 switch (data) {
                                   case "Стена":
@@ -98,7 +98,7 @@ class ThicknessDimensionsScreen extends HookWidget {
                                         progress: 3,
                                         length: 6,
                                         onTap: (data) {
-                                          print(data);
+                                          // print(data);
 
                                           wall = data;
 
@@ -112,7 +112,7 @@ class ThicknessDimensionsScreen extends HookWidget {
                                                   progress: 4,
                                                   length: 7,
                                                   onTap: (data) {
-                                                    print(data);
+                                                    // print(data);
 
                                                     brickType = data;
 
@@ -123,7 +123,7 @@ class ThicknessDimensionsScreen extends HookWidget {
                                                             progress: 7,
                                                             length: 9,
                                                             onTap: (data) {
-                                                              print(data);
+                                                              // print(data);
 
                                                               size = data;
 
@@ -167,7 +167,7 @@ class ThicknessDimensionsScreen extends HookWidget {
                                                             progress: 7,
                                                             length: 9,
                                                             onTap: (data) {
-                                                              print(data);
+                                                              // print(data);
 
                                                               size = data;
 
@@ -211,7 +211,7 @@ class ThicknessDimensionsScreen extends HookWidget {
                                                             progress: 7,
                                                             length: 9,
                                                             onTap: (data) {
-                                                              print(data);
+                                                              // print(data);
 
                                                               size = data;
 
@@ -268,7 +268,7 @@ class ThicknessDimensionsScreen extends HookWidget {
                                                   progress: 7,
                                                   length: 9,
                                                   onTap: (data) {
-                                                    print(data);
+                                                    // print(data);
 
                                                     size = data;
 
@@ -308,7 +308,7 @@ class ThicknessDimensionsScreen extends HookWidget {
                                                   progress: 7,
                                                   length: 9,
                                                   onTap: (data) {
-                                                    print(data);
+                                                    // print(data);
 
                                                     size = data;
 
@@ -363,7 +363,7 @@ class ThicknessDimensionsScreen extends HookWidget {
                                         progress: 3,
                                         length: 6,
                                         onTap: (data) {
-                                          print(data);
+                                          // print(data);
 
                                           floor = data;
 
@@ -376,7 +376,7 @@ class ThicknessDimensionsScreen extends HookWidget {
                                                   length: 6,
                                                   subText: data,
                                                   onTap: (data) {
-                                                    print(data);
+                                                    // print(data);
 
                                                     floorCover = data;
 
@@ -483,7 +483,7 @@ class ThicknessDimensionsScreen extends HookWidget {
                                                   length: 6,
                                                   subText: data,
                                                   onTap: (data) {
-                                                    print(data);
+                                                    // print(data);
 
                                                     floorCover = data;
 
@@ -599,7 +599,7 @@ class ThicknessDimensionsScreen extends HookWidget {
                                         progress: 3,
                                         length: 5,
                                         onTap: (data) {
-                                          print(data);
+                                          // print(data);
 
                                           roofCover = data;
 

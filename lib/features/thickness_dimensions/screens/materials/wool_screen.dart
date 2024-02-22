@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:zhyluu_ui/features/thickness_dimensions/presentation/screens/materials/material_base_screen.dart';
+import 'package:zhyluu_ui/features/thickness_dimensions/screens/materials/material_base_screen.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
 
-class PenopoliuretanPuScreen extends StatelessWidget {
-  static const name = "penopoliuretan-pu";
+class WoolScreen extends StatelessWidget {
+  static const name = "wool";
 
-  const PenopoliuretanPuScreen({
+  const WoolScreen({
     super.key,
     required this.cityOrVillage,
     required this.fileName,
@@ -17,23 +17,23 @@ class PenopoliuretanPuScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialBaseScreen(
-      title: "Пенополиуретан (ПУ)",
-      materialName: "Пенопо-лиуретан",
+      title: "Шерсть",
+      materialName: "Шерсть",
       fileName: fileName,
       cityOrVillage: cityOrVillage,
-      imagePath: Assets.images.howToInsulate.prosAndCons.penopoliuretanPu.path,
+      imagePath: Assets.images.howToInsulate.prosAndCons.wool.path,
       pros: [
         ProsAndCons(
           name: "теплоизоляция",
           imagePath: Assets.images.howToInsulate.prosAndCons.warm.path,
         ),
         ProsAndCons(
-          name: "звукоизоляция",
-          imagePath: Assets.images.howToInsulate.prosAndCons.noAudio.path,
+          name: "экологичный",
+          imagePath: Assets.images.howToInsulate.prosAndCons.leaf.path,
         ),
         ProsAndCons(
-          name: "маленький объем",
-          imagePath: Assets.images.howToInsulate.prosAndCons.weight.path,
+          name: "звукоизоляция",
+          imagePath: Assets.images.howToInsulate.prosAndCons.noAudio.path,
         ),
       ],
       cons: [
@@ -42,16 +42,13 @@ class PenopoliuretanPuScreen extends StatelessWidget {
           imagePath: Assets.images.howToInsulate.prosAndCons.escapeMask.path,
         ),
         ProsAndCons(
-          name: """плохая
-огнеупорность""",
+          name: "огнеупорность",
           imagePath:
               Assets.images.howToInsulate.prosAndCons.fireExtinguisher.path,
         ),
         ProsAndCons(
-          name: """плохая
-воздухопроницаемость""",
-          imagePath:
-              Assets.images.howToInsulate.prosAndCons.centralHeating.path,
+          name: "биоразлагаемый",
+          imagePath: Assets.images.howToInsulate.prosAndCons.protect.path,
         ),
       ],
     );

@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:excel/excel.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show ByteData, rootBundle;
@@ -39,7 +41,7 @@ class MaterialBaseScreen extends StatelessWidget {
 
   Future<String> getSize() async {
     final file = "$fileName.xlsx";
-    print(file);
+    log(file);
 
     ByteData data = await rootBundle.load('assets/data/$file');
 
@@ -49,7 +51,7 @@ class MaterialBaseScreen extends StatelessWidget {
     var sheetName = excel.tables.keys.first;
     var sheet = excel[sheetName];
 
-    print(sheet.sheetName);
+    log(sheet.sheetName);
 
     var cityOrVillageIndex = 0;
     var materialIndex = -1;
@@ -88,7 +90,7 @@ class MaterialBaseScreen extends StatelessWidget {
         columnIndex: materialIndex, rowIndex: rowIndex));
     var materialSize = cell.value.toString();
 
-    print(materialSize);
+    log(materialSize);
 
     return materialSize;
   }

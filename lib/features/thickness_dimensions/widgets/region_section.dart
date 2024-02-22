@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:zhyluu_ui/features/thickness_dimensions/presentation/widgets/ti_manager.dart';
+import 'package:zhyluu_ui/features/thickness_dimensions/widgets/ti_manager.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
 
 class RegionSection extends StatelessWidget {
